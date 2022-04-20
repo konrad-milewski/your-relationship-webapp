@@ -1,10 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+ 
+  
+  color:white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+h1{
+text-decoration: none;
+}
+
 .App {
   text-align: center;
+  position: relative;
+  height: 100vh;
+  background-color:#DE3A89;
+  overflow: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.landing-component{
+ text-decoration: none;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 40%;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +67,174 @@
     transform: rotate(360deg);
   }
 }
+
+.black{
+  background-color: black;
+  width: 50%;
+  height: 100vh;
+  display: inline;
+}
+
+.pink{
+  background-color: #DE3A89;
+  width: 50%;
+  height: 100vh;
+  display: inline;
+}
+
+.container-main{
+  display: flex;
+
+}
+
+.main-icon{
+  position: relative;
+  /* transform: translateY(-50%); */
+  top: 50%;
+}
+
+.title-main{
+  position: fixed;
+  top: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: none !important;
+  top: 3%;
+  width: 70%;
+}
+
+.bottom-text{
+  position: fixed;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: none !important;
+ 
+}
+
+
+.icon-summary{
+  position: relative;
+  transform: translateY(-50%);
+  top: 85%;
+}
+.good{
+  top: 85%;
+}
+.black{
+
+}
+
+.p-abs{
+  position: absolute;
+}
+
+.sum{
+  top: 30%;
+  font-size: 56px;
+  margin-bottom: -20px;
+}
+
+.sum-count{
+  top: 30%;
+  font-size: 24px;
+}
+
+.label{
+  position: absolute;
+  top: 89% !important;
+  transform: translateX(-50%);
+  margin-left: 25%;
+}
+
+.d-block{
+  display: block;
+}
+
+@keyframes bounceIn {
+	0%, 20%, 50%, 80%, 100% {
+
+    
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+
+  }
+	40% {
+    transform: translateY(-30px) translateX(-50%);
+  }
+	60% {
+    transform: translateY(-15px) translateX(-50%);
+  }
+}
+
+.bounce {
+  animation: bounceIn 1.5s  ;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite 0.5s;
+  
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
+	40% {transform: translateY(-30px) translateX(-50%);}
+	60% {transform: translateY(-15px) translateX(-50%);}
+}
+
+@keyframes width100 {
+	0% {width: 600%; z-index: 100; position: absolute;}
+	100% {width: 50%;}
+
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+.fade{
+  animation: fade 1.35s ease infinite ;
+}
+
+.width100 {
+  animation: width100 0.5s ease ;
+}
+
+.input{
+  border: none;
+  width: 85%;
+  color: #DE3A89;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+input::placeholder{
+  color: #DE3A89;
+}
+.register-text{
+  float: left;
+  display: inline;
+  margin-left: 22px;
+}
+
+.Ok{
+  float:right;
+  margin-right: 25px;
+  
+}
+
+.input:focus{
+  outline: none;
+}
+
+.back{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
